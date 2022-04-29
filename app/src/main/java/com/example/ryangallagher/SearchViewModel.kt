@@ -69,6 +69,16 @@ class SearchViewModel @Inject constructor(private val api: Api) : ViewModel() {
         }
     }
 
+    fun notificationBtnClicked(latitude: String, longitude: String) = runBlocking {
+        launch {
+            try {
+                _currentConditions.value = api.getCurrentConditionsLL(latitude, longitude)
+            } catch (e: HttpException) {
+                _showErrorDialog.value = true
+            }
+        }
+    }
+
     fun setErrorDialogToFalse() {
         _showErrorDialog.value = false
     }

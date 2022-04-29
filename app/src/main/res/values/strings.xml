@@ -14,5 +14,10 @@
     <string name="ok">Ok</string>
     <string name="RequestMyLocation">Request My Location</string>
     <string name="location_permission_rational">In order to use this functionality, please accept location permissions</string>
+    <string name="NotificationButton">Turn on Notifications</string>
+    <string name="turn_off_notifications">Turn Off Notifications</string>
+    <string name="turn_on_notifications">Turn On Notifications</string>
+    <string name="notificationTitle">NOTIFICATION TITLE TEST</string>
+    <string name="notificationText">Notification TEXT TEST</string>
 
 </resources>
